@@ -1,0 +1,5 @@
+<h1>Patients belongs to doctors</h1>
+<% @patients.each do |patient|%>
+    Name: <a href="<%= doctors_path(id: patient.id)%>"><%= patient.name%></a><br>
+    Email: <%= patient.email%><br>
+<% end %>
